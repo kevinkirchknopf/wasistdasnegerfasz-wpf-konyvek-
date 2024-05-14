@@ -1,0 +1,29 @@
+﻿<Window x:Class="irokkönyvek_20240409.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:irokkönyvek_20240409"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <ContentControl x:Name="contentcontrol" Grid.Column="1" ></ContentControl>
+
+        <StackPanel Background="Yellow">
+
+            <Button x:Name="btauthor" Content="Authors"  Height="29" Margin="5"  Click="btauthor_Click" Background="Beige"/>
+
+            <Button x:Name="btbook" Content="Books" Margin="5" Height="29" Click="btbook_Click" Background="Beige"/>
+
+            <Button x:Name="btcountry" Content="Countries" Margin="5" Height="29" Click="btcountry_Click" Background="Beige"/>
+
+            <Button x:Name="btauthorbooks" Content="Authors Books" Margin="5" Height="29" Click="btauthorbooks_Click" Background="Beige"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
